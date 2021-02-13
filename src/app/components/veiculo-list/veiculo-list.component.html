@@ -1,1 +1,77 @@
-<p>veiculo-list works!</p>
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Pesquisar por chassi"
+        [(ngModel)]="chassi"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="searchChassi()"
+        >
+          Pesquisar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>Todos Veículos</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let veiculo of veiculos; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveVeiculo(veiculo, i)"
+      >
+        {{ veiculo.chassi }}
+      </li>
+    </ul>
+
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllVeiculos()">
+      Apagar Tudo
+    </button>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentVeiculo">
+      <h4>Veiculo</h4>
+      <div>
+        <label><strong>Placa:</strong></label> {{ currentVeiculo.placa }}
+      </div>
+      <div>
+        <label><strong>Chassi:</strong></label>
+        {{ currentVeiculo.chassi }}
+      </div>
+      <div>
+        <label><strong>Renavam:</strong></label>
+        {{ currentVeiculo.renavam }}
+      </div>
+
+      <div>
+        <label><strong>Modelo:</strong></label>
+        {{ currentVeiculo.modelo }}
+      </div>
+
+      <div>
+        <label><strong>Marca:</strong></label>
+        {{ currentVeiculo.marca }}
+      </div>
+      <div>
+        <label><strong>Ano:</strong></label>
+        {{ currentVeiculo.ano }}
+      </div>
+
+      <a class="badge badge-warning" routerLink="/veiculos/{{ currentVeiculo.id }}">
+        Alterar
+      </a>
+    </div>
+
+    <div *ngIf="!currentVeiculo">
+      <br />
+      <p>Porfavor, selecione um veículo...</p>
+    </div>
+  </div>
+</div>
