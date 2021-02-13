@@ -19,6 +19,6 @@ const db = {}
 db.Sequelize = Sequelize
 db.sequelize = sequelize
 
-db.tutorials = require("./veiculo.model.js")(sequelize, Sequelize)
+db.veiculos = require("./veiculo.model.js")(sequelize, Sequelize)
 
 module.exports = db;

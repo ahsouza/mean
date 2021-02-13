@@ -1,24 +1,34 @@
 const
  express = require("express"),
+ compression = require("compression"),
  bodyParser = require("body-parser"),
  cors = require("cors"),
- db = require("./models")
- db.sequelize.sync({ force: true }).then(() => {
-  console.log("Drop and re-sync db.");
-});
+ helmet = require('helmet'),
+ VeiculoController = require("./controllers/veiculo.controller")
 
 const app = express()
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+   origin: "http://localhost:4200"
 }
 
-app.use(cors(corsOptions))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(compression())
+app.use(helmet())
+app.use(cors(corsOptions))
+app.enable('trust proxy')
 
+const db = require("./models")
+db.sequelize.sync({ force: true }).then(() => {
+  console.log("Drop and re-sync db.");
+});
 
-
+app.post('/api/veiculos', VeiculoController.store);
+app.get('/api/veiculos', VeiculoController.index);
+app.get('/api/veiculos/:id', VeiculoController.show);
+app.put('/api/veiculos/:id', VeiculoController.update);
+app.delete('/api/veiculos/:id', VeiculoController.destroy);
 
 // simple route
 app.get("/", (req, res) => {
