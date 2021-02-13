@@ -1,7 +1,11 @@
 const
  express = require("express"),
  bodyParser = require("body-parser"),
- cors = require("cors")
+ cors = require("cors"),
+ db = require("./models")
+ db.sequelize.sync({ force: true }).then(() => {
+  console.log("Drop and re-sync db.");
+});
 
 const app = express()
 
@@ -12,6 +16,9 @@ var corsOptions = {
 app.use(cors(corsOptions))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+
+
+
 
 // simple route
 app.get("/", (req, res) => {
