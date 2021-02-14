@@ -70,15 +70,23 @@
         />
       </div>
 
-      <button (click)="saveVeiculo()" class="btn btn-success">REGISTRAR</button>
+      <button (click)="saveVeiculo()" class="btn btn-success">salvar</button>
+
 
     </div>
 
+
+
+
+
+
+
     <div *ngIf="submitted">
-      <h4>Seu veículo foi salvo com sucesso!</h4>
+      <h5>Seu veículo foi salvo com sucesso!</h5>
       <button class="btn btn-success" (click)="newVeiculo()">
-      	Add
+      	Novo
       </button>
     </div>
   </div>
 </div>
+

@@ -1,77 +1,59 @@
+<div class="content" role="main">
+
 <div class="list row">
-  <div class="col-md-8">
-    <div class="input-group mb-3">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Pesquisar por chassi"
-        [(ngModel)]="chassi"
-      />
-      <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          (click)="searchChassi()"
+
+  <div class="col-md-6">
+
+    <div class="card-container">
+
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let veiculo of veiculos; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveVeiculo(veiculo, i)"
         >
-          Pesquisar
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <h4>Todos Veículos</h4>
-    <ul class="list-group">
-      <li
-        class="list-group-item"
-        *ngFor="let veiculo of veiculos; let i = index"
-        [class.active]="i == currentIndex"
-        (click)="setActiveVeiculo(veiculo, i)"
-      >
-        {{ veiculo.chassi }}
-      </li>
-    </ul>
+          <a class="card" target="_blank" style="background-color: #2196f3; color: #c6ff00; font-weight: bold">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#fff" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"/></svg>
 
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllVeiculos()">
-      Apagar Tudo
-    </button>
+            &nbsp;&nbsp;<span>{{ veiculo.chassi }}</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>    
+
   </div>
   <div class="col-md-6">
+  
     <div *ngIf="currentVeiculo">
-      <h4>Veiculo</h4>
-      <div>
-        <label><strong>Placa:</strong></label> {{ currentVeiculo.placa }}
-      </div>
-      <div>
-        <label><strong>Chassi:</strong></label>
-        {{ currentVeiculo.chassi }}
-      </div>
-      <div>
-        <label><strong>Renavam:</strong></label>
-        {{ currentVeiculo.renavam }}
+
+      <div class="card-container" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Veículo</h5>
+          <br>
+          <h6 class="card-subtitle mb-2 text-muted"><b>Placa: </b> {{ currentVeiculo.placa }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted"><b>Chassi: </b> {{ currentVeiculo.chassi }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted"><b>Renavam: </b> {{ currentVeiculo.renavam }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted"><b>Modelo: </b> {{ currentVeiculo.modelo }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted"><b>Marca: </b> {{ currentVeiculo.marca }}</h6>
+          <h6 class="card-subtitle mb-2 ml-2 text-muted"><b>Ano: </b> {{ currentVeiculo.ano }}</h6>
+          <p class="card-text"></p>
+          <br>
+          <a type="button" class="btn btn-outline-danger">Excluir</a>&nbsp;&nbsp;
+          <a type="button" class="btn btn-outline-primary" routerLink="/veiculos/{{ currentVeiculo.id }}">Editar</a>
+        </div>
       </div>
 
-      <div>
-        <label><strong>Modelo:</strong></label>
-        {{ currentVeiculo.modelo }}
-      </div>
 
-      <div>
-        <label><strong>Marca:</strong></label>
-        {{ currentVeiculo.marca }}
-      </div>
-      <div>
-        <label><strong>Ano:</strong></label>
-        {{ currentVeiculo.ano }}
-      </div>
-
-      <a class="badge badge-warning" routerLink="/veiculos/{{ currentVeiculo.id }}">
-        Alterar
-      </a>
     </div>
 
     <div *ngIf="!currentVeiculo">
       <br />
-      <p>Porfavor, selecione um veículo...</p>
+      <h6 class="card-subtitle mb-2 text-muted" align="center">Escolha algum veículo</h6>
     </div>
   </div>
+
+
+</div>
 </div>
