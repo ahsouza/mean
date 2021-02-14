@@ -11,11 +11,11 @@ export class AddVeiculoComponent implements OnInit {
 
   veiculo: Veiculo = {
     placa: '',
-    chassi: 0,
-    renavam: 0,
-    modelo: 0,
+    chassi: undefined,
+    renavam: undefined,
+    modelo: undefined,
     marca: '',
-    ano: 0
+    ano: undefined
   };
   submitted = false;
 
@@ -49,11 +49,11 @@ export class AddVeiculoComponent implements OnInit {
     this.submitted = false;
     this.veiculo = {
       placa: '',
-      chassi: 0,
-      renavam: 0,
-      modelo: 0,
+      chassi: undefined,
+      renavam: undefined,
+      modelo: undefined,
       marca: '',
-      ano: 0
+      ano: undefined
     };
   }
 

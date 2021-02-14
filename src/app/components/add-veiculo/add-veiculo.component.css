@@ -26,3 +26,8 @@ button {
 button:hover, button:focus {
   background-color: #27ae60;
 }
+
+#btn-close {
+  width: 30px;
+  height: 30px;
+}

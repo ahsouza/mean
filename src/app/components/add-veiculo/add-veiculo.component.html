@@ -1,7 +1,8 @@
-<div style="width: 400px; margin: auto;">
+<div>
   <div class="submit-form">
     <div *ngIf="!submitted">
-      <div class="form-group">
+      
+      <div class="form-group mb-4 mt-5">
         <label for="placa">Placa</label>
         <input
           type="text"
@@ -13,7 +14,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="chassi">Chassi</label>
         <input
           type="number"
@@ -25,7 +26,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="renavam">Renavam</label>
         <input
           type="number"
@@ -37,7 +38,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="modelo">Modelo</label>
         <input
           class="form-control"
@@ -48,7 +49,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="marca">Marca</label>
         <input
           class="form-control"
@@ -72,21 +73,14 @@
 
       <button (click)="saveVeiculo()" class="btn btn-success">salvar</button>
 
-
     </div>
-
-
-
-
-
-
 
     <div *ngIf="submitted">
-      <h5>Seu veículo foi salvo com sucesso!</h5>
-      <button class="btn btn-success" (click)="newVeiculo()">
-      	Novo
-      </button>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Veículo salvo com <strong>sucesso!</strong>
+      </div>
     </div>
+
   </div>
 </div>
 

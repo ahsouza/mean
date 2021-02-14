@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VeiculoService } from 'src/app/services/veiculo.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Veiculo } from 'src/app/models/veiculo.model';
 
 @Component({
@@ -19,7 +20,11 @@ export class VeiculoListComponent implements OnInit {
   marca = '';
   ano = 0;
 
-  constructor(private veiculoService: VeiculoService) { }
+  constructor(
+    private veiculoService: VeiculoService,
+    private route: ActivatedRoute,
+    private router: Router) 
+  { }
 
   ngOnInit(): void {
   	this.retrieveVeiculos();
@@ -75,6 +80,16 @@ export class VeiculoListComponent implements OnInit {
         });
   }
 
-
+  deleteVeiculo(id: number): void {
+    this.veiculoService.delete(id)
+      .subscribe(
+        res => {
+          console.log(res);
+          this.router.navigate(['/veiculos']);
+        },
+        error => {
+          console.log(error);
+        });
+  }
 
 }
