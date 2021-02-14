@@ -58,6 +58,7 @@ export class VeiculoListComponent implements OnInit {
       .subscribe(
         res => {
           console.log(res);
+          this.router.navigate(['/veiculos']);
           this.retrieveVeiculos();
         },
         error => {
@@ -85,7 +86,7 @@ export class VeiculoListComponent implements OnInit {
       .subscribe(
         res => {
           console.log(res);
-          this.router.navigate(['/veiculos']);
+          window.location.reload();
         },
         error => {
           console.log(error);

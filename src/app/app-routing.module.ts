@@ -7,7 +7,7 @@ import { VeiculoDetailsComponent } from './components/veiculo-details/veiculo-de
 import { AddVeiculoComponent } from './components/add-veiculo/add-veiculo.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'veiculos', pathMatch: 'full' },
+  { path: '', redirectTo: 'add', pathMatch: 'full' },
   { path: 'veiculos', component: VeiculoListComponent },
   { path: 'veiculos/:id', component: VeiculoDetailsComponent },
   { path: 'add', component: AddVeiculoComponent }

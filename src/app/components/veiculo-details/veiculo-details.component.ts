@@ -61,7 +61,7 @@ export class VeiculoDetailsComponent implements OnInit {
       .subscribe(
         res => {
           console.log(res);
-          this.router.navigate(['/veiculos']);
+          this.router.navigate(['/']);
         },
         error => {
           console.log(error);

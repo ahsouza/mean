@@ -2,7 +2,7 @@
   <div *ngIf="currentVeiculo.id" class="edit-form">
     
     <form>
-      <div class="form-group">
+      <div class="form-group mb-4">
         <label for="placa">Placa</label>
         <input
           type="text"
@@ -12,7 +12,8 @@
           name="placa"
         />
       </div>
-      <div class="form-group">
+
+      <div class="form-group mb-4">
         <label for="chassi">Chassi</label>
         <input
           type="number"
@@ -23,7 +24,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-4">
         <label for="renavam">Renavam</label>
         <input
           type="number"
@@ -34,7 +35,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-4">
         <label for="modelo">Modelo</label>
         <input
           type="number"
@@ -45,7 +46,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-4">
         <label for="marca">Marca</label>
         <input
           type="string"
@@ -56,7 +57,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group mb-4">
         <label for="ano">Ano</label>
         <input
           type="string"
@@ -69,13 +70,13 @@
 
     </form>
 
-    <button class="badge badge-danger mr-2" (click)="deleteVeiculo()">
+    <button class="btn btn-outline-danger mr-2" (click)="deleteVeiculo()">
       Excluír
     </button>
 
     <button
       type="submit"
-      class="badge badge-success mb-2"
+      class="btn btn-outline-success ml-2"
       (click)="updateVeiculo()"
     >
       Alterar
@@ -85,6 +86,8 @@
 
   <div *ngIf="!currentVeiculo.id">
     <br />
-    <p>Não pode obter a lista de veículos :/</p>
+    <div class="spinner-border text-danger mb-5 mt-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
 </div>
