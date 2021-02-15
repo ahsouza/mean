@@ -1,6 +1,7 @@
 {
   "name": "mean-app",
   "version": "0.0.0",
+  "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

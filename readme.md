@@ -18,16 +18,12 @@
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ahsouza/mean">
     </a>
   </p>
-  <img src="assets/angular.png" width=25 title='angular'/>&nbsp;
-  <img src="assets/node.png" width=25 title='node'/> &nbsp;
-  <img src="assets/mysql.png" width=25 title='mysql'/> &nbsp;
-  <img src="assets/bootstrap.png" width=25 title='bootstrap'/> &nbsp;
-  <img src="assets/html.png" width=25 title='html'/> &nbsp;
-  <img src="assets/css.png" width=25 title='css'/> &nbsp;
-  <img src="assets/express.png" width=25 title='express'/> &nbsp;
-  <img src="assets/npm.png" width=25 title='npm'/> 
+  <img src="assets/angular.png" width=35 title='angular'/>&nbsp;<img src="assets/node.png" width=35 title='node'/> &nbsp;<img src="assets/mysql.png" width=35 title='mysql'/> &nbsp;<img src="assets/bootstrap.png" width=35 title='bootstrap'/> &nbsp;<img src="assets/html.png" width=35 title='html'/> &nbsp;<img src="assets/css.png" width=35 title='css'/> &nbsp;<img src="assets/express.png" width=35 title='express'/> &nbsp;<img src="assets/npm.png" width=35 title='npm'/> 
 </p>
 
+<br>
+<br>
+<br>
 
 ## Estrutura de Arquivos & Pastas
 
@@ -48,7 +44,7 @@ branch: main
 	└📄 serviceWorker.js
 ```
 
-
+<br>
 
 | TECNOLOGIAS              | [MEAN stack](https://pt.wikipedia.org/wiki/MEAN_(conjunto_de_software) |
 | ------------------------ | :----------------------------------------------------------- |
@@ -59,13 +55,19 @@ branch: main
 | -                        | ✔ HTML/CSS + Bootstrap                               
 | -                        | ✔ Implantação com Heroku                               
 
+<br>
+<br>
 
-Lista de Ramos (list of branch) ```git branch -a```
+Ramificações (branch) ```git branch -a```
 
-- main
-- frontend
-- backend
-- producao
+- [main](https://github.com/ahsouza/mean/tree/main)
+- [frontend](https://github.com/ahsouza/mean/tree/frontend)
+- [backend](https://github.com/ahsouza/mean/tree/backend)
+- [producao](https://github.com/ahsouza/mean/tree/producao)
+
+<br>
+<br>
+<br>
 
 ## Frontend
 
@@ -75,9 +77,12 @@ Lista de Ramos (list of branch) ```git branch -a```
 - Execute o servidor express: `npm run start` or `yarn start`
 - Acesse no browser: `http://localhost:4200`
 
+<br>
+
 Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do frontend `Angular.js 11.2.0`
 
-🌐 **URL** https://mean.com/
+<br>
+<br>
 
 ## Backend
 
@@ -87,10 +92,17 @@ Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do fronte
 - Execute o servidor express: `npm run start` or `yarn start`
 - Acesse no browser: `http://localhost:8080`
 
+<br>
+
 Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do backend `Express 4.17.1`
+
+<br>
 
 🌐 **URL** https://mean-ahsouza.herokuapp.com/
 
+<br>
+<br>
+<br>
 
 ## 📋 Documentação
 
