@@ -8,9 +8,9 @@ import { AddVeiculoComponent } from './components/add-veiculo/add-veiculo.compon
 
 const routes: Routes = [
   { path: '', redirectTo: 'add', pathMatch: 'full' },
-  { path: '/mean/veiculos', component: VeiculoListComponent },
-  { path: '/mean/veiculos/:id', component: VeiculoDetailsComponent },
-  { path: '/mean/add', component: AddVeiculoComponent }
+  { path: '/veiculos', component: VeiculoListComponent },
+  { path: '/veiculos/:id', component: VeiculoDetailsComponent },
+  { path: '/add', component: AddVeiculoComponent }
 ];
 
 @NgModule({
