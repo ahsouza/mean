@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "dist/mean-app/",
     "ignore": [
       "firebase.json",
       "**/.*",
