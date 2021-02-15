@@ -2,7 +2,7 @@
   <div *ngIf="currentVeiculo.id" class="edit-form">
     
     <form>
-      <div class="form-group mb-4">
+      <div class="form-group mb-3">
         <label for="placa">Placa</label>
         <input
           type="text"
@@ -70,17 +70,17 @@
 
     </form>
 
-    <button class="btn btn-outline-danger mr-2" (click)="deleteVeiculo()">
+    <a class="btn btn-outline-danger mb-5" (click)="deleteVeiculo()">
       Excluír
-    </button>
-
-    <button
+    </a>
+    &nbsp;
+    <a
       type="submit"
-      class="btn btn-outline-success ml-2"
+      class="btn btn-outline-info mb-5"
       (click)="updateVeiculo()"
     >
       Alterar
-    </button>
+    </a>
     <p>{{ message }}</p>
   </div>
 
