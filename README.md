@@ -80,7 +80,7 @@ Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do projet
 🌐 **URL** 
 
  - Implantado com Github https://ahsouza.github.io/mean/
- - Implantado com Netlify https://ahsouza.github.io/mean/
+ - Implantado com Netlify https://602a1bd79b021b5f921e1c2f--peaceful-liskov-843212.netlify.app/
 
 
 
