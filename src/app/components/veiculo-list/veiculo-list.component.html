@@ -6,10 +6,6 @@
     <a class="circle-link" title="Meus Veículos" href="/veiculos" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#2196f3" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"/></svg>
     </a>
-
-    <a (click)="removeAllVeiculos()" class="circle-link" title="Apagar Tudo" type="button" >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d50000" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
-    </a>
     
   </div>
 <div class="list row">
@@ -31,7 +27,7 @@
           <a class="card"  style="background-color: #2196f3; color: #c6ff00; font-weight: bold">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#fff" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"/></svg>
 
-            &nbsp;&nbsp;<span>{{ veiculo.chassi }}</span>
+            &nbsp;&nbsp;<span class="ml-5">{{ veiculo.chassi }}</span>
           </a>
         </li>
       </ul>
