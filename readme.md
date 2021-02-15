@@ -55,7 +55,7 @@ branch: main
 | -                        | ✔ Banco de Dados **MySQL**                                                                      
 | -                        | ✔ Ambiente Runtime **Node.js**
 | -                        | ✔ HTML/CSS + Bootstrap                               
-| -                        | ✔ Implantação com Heroku                               
+| -                        | ✔ Implantação com Heroku, Netlify, Firebase & GitHub Pages                               
 
 <br>
 <br>
@@ -69,6 +69,7 @@ Ramificações (branch) ```git branch -a```
 - [producao](https://github.com/ahsouza/mean/tree/producao)
 - [mocha-test](https://github.com/ahsouza/mean/tree/mocha-test)
 - [gh-pages](https://github.com/ahsouza/mean/tree/gh-pages)
+- [firebase-deploy](https://github.com/ahsouza/mean/tree/firebase-deploy)
 
 <br>
 <br>
