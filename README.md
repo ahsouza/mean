@@ -1,27 +1,101 @@
-# MeanApp
+<p align="center">
+ <img width="100px" src="src/assets/angular.png" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">INTERFACE PWA</h2>
+ <p align="center">
+    Angular.js & Node.js</p>
+ </p>
+  <p align="center">
+    <a href="https://github.com/ahsouza/github-readme-stats/actions">
+      <img alt="GitHub issues" src="https://img.shields.io/github/issues/ahsouza/mean">
+    </a>
+    <a href="https://codecov.io/gh/ahsouza/github-readme-stats">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ahsouza/mean">
+    </a>
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
+      <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/ahsouza/mean">
+    </a>
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ahsouza/mean">
+    </a>
+  </p>
+  <div style="display: flex" align="center">
+    <img src="assets/angular.png" width=40 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=40 title='bootstrap'/> <img src="assets/html.png" width=40 title='html'/> <img src="assets/css.png" width=40 title='css'/> <img src="assets/express.png" width=40 title='express'/> <img src="assets/npm.png" width=40 title='npm'/> 
+  </div>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+<br>
+<br>
+<br>
 
-## Development server
+## Estrutura de Arquivos & Pastas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+branch: main
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+├📂 e2e
+└📂 src
+	├📂 app
+	│	├📂 components
+	│	├📂 models
+	│	├📂 services
+	|	|	...
+	├📂 assets
+	├📂 environments
+	├📄 favicon.ico
+	├📄 index.html
+	├📄 main.ts
+	├📄 polyfills.ts
+	├📄 styles.css
+	├📄 test.ts
+└📄 .browserslistrc
+└📄 .editorconfig
+└📄 .gitignore
+└📄 .angular.json
+└📄 .karma.conf.js
+└📄 .package.json
+└📄 .README.md
+└📄 .tsconfig.app.json
+└📄 tsconfig.json
+└📄 tsconfig.spec.json
+└📄 tslint.json
+```
 
-## Build
+## Frontend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Clone o repositório `https://github.com/ahsouza/mean.git` 
+- Altere a branch do projeto de `main` para `frontend` executando o comando `git checkout frontend` 
+- Instale as dependências: `npm install` or `yarn`
+- Execute o servidor de desenvolvimento angularjs: `ng serve`
+- Execute `ng generate component nome-do-seu-componente` para gerar um novo componente
+- Execute `ng test` para testes unitários com [Karma](https://karma-runner.github.io/latest/index.html)
+- Execute `ng e2e` para testes end-to-end com [Protractor](http://www.protractortest.org/)
+- Execute `ng build --prod --output-path docs` para publicar sua aplicação
+- Acesse no browser: `http://localhost:4200`
 
-## Running unit tests
+<br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do projeto frontend `Angular.js 11.2.0`
 
-## Running end-to-end tests
+<br>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+🌐 **URL** 
 
-## Further help
+ - Implantado com Github https://ahsouza.github.io/mean/
+ - Implantado com Netlify https://ahsouza.github.io/mean/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+<br>
+<br>
+<br>
+<br>
+
+## 📋 Documentação
+
+As documentações do projeto, facilita na navegação entre as ramificações do projeto `(backend)(frontend)` 
+
+<br>
+<br>
+
+👉 [Docs Backend Node.js](https://github.com/ahsouza/mean/tree/backend)
