@@ -1,6 +1,6 @@
 <p align="center">
  <img width="100px" src="assets/node.png" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">INTERFACE PWA</h2>
+ <h2 align="center">API REST</h2>
  <p align="center">
     Angular.js & Node.js</p>
  </p>
@@ -33,11 +33,11 @@ branch: backend
 ├📂 config
 ├📂 controllers
 └📂 models
-  │ ├📄 index.js
-  │ ├📄 veiculo.model.js
-  └📄 package.json
-  ├📄 readme.md
-  ├📄 server.js
+│ ├📄 index.js
+│ ├📄 veiculo.model.js
+└📄 package.json
+├📄 readme.md
+├📄 server.js
 ```
 
 
