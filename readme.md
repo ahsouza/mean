@@ -19,7 +19,7 @@
     </a>
   </p>
   <div style="display: flex" align="center">
-    <img src="assets/angular.png" width=50 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=70 title='bootstrap'/> <img src="assets/html.png" width=45 title='html'/> <img src="assets/css.png" width=50 title='css'/> <img src="assets/express.png" width=50 title='express'/> <img src="assets/npm.png" width=50 title='npm'/> 
+    <img src="assets/angular.png" width=50 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=55 title='bootstrap'/> <img src="assets/html.png" width=45 title='html'/> <img src="assets/css.png" width=50 title='css'/> <img src="assets/express.png" width=50 title='express'/> <img src="assets/npm.png" width=50 title='npm'/> 
   </div>
 </p>
 
@@ -34,13 +34,14 @@ branch: main
 
 ├📄 .github
 ├📂 assets
-├📂 config
-├📂 controllers
-└📂 models
-  ├📄 index.js
-  └📄 veiculo.model.js
-├📄 package.json
-├📄 server.js
+├📂 client
+└📂 server
+  ├📂 config
+  ├📂 controllers
+  ├📂 models
+  └📄 package.json
+  └📄 server.js
+├📄 readme.md
 ```
 <br>
 <br>
