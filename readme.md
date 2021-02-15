@@ -62,10 +62,15 @@ Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do projeto
 
 
 <br>
+
 ## Endpoints
+ 
  <br>
+ 
  baseURL: `https://mean-ahsouza.herokuapp.com/`
+ 
  <br>
+ 
 ```
 | MÉTODOS HTTP         | Serviços             |
 | -------------------- | :--------------------|
