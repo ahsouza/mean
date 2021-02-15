@@ -1,7 +1,15 @@
 {
   "name": "mean-app",
-  "version": "0.0.0",
   "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com>",
+  "version": "0.0.1",
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "heroku",
+    "angular",
+    "javascript"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,13 +18,15 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~11.2.0",
+    "@angular/cdk": "^11.2.0",
     "@angular/common": "~11.2.0",
     "@angular/compiler": "~11.2.0",
     "@angular/core": "~11.2.0",
     "@angular/forms": "~11.2.0",
+    "@angular/material": "^11.2.0",
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",

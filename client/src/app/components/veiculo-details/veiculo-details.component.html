@@ -1,0 +1,93 @@
+<div style="padding-top: 75px;">
+  <div *ngIf="currentVeiculo.id" class="edit-form">
+    
+    <form>
+      <div class="form-group mb-3">
+        <label for="placa">Placa</label>
+        <input
+          type="text"
+          class="form-control"
+          id="placa"
+          [(ngModel)]="currentVeiculo.placa"
+          name="placa"
+        />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="chassi">Chassi</label>
+        <input
+          type="number"
+          class="form-control"
+          id="chassi"
+          [(ngModel)]="currentVeiculo.chassi"
+          name="chassi"
+        />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="renavam">Renavam</label>
+        <input
+          type="number"
+          class="form-control"
+          id="renavam"
+          [(ngModel)]="currentVeiculo.renavam"
+          name="renavam"
+        />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="modelo">Modelo</label>
+        <input
+          type="number"
+          class="form-control"
+          id="modelo"
+          [(ngModel)]="currentVeiculo.modelo"
+          name="modelo"
+        />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="marca">Marca</label>
+        <input
+          type="string"
+          class="form-control"
+          id="marca"
+          [(ngModel)]="currentVeiculo.marca"
+          name="marca"
+        />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="ano">Ano</label>
+        <input
+          type="string"
+          class="form-control"
+          id="ano"
+          [(ngModel)]="currentVeiculo.ano"
+          name="ano"
+        />
+      </div>
+
+    </form>
+
+    <a type="button" class="btn btn-outline-danger mb-5" (click)="deleteVeiculo()">
+      Excluír
+    </a>
+    &nbsp;
+    <a
+      type="button"
+      class="btn btn-outline-info mb-5"
+      (click)="updateVeiculo()"
+    >
+      Alterar
+    </a>
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="!currentVeiculo.id">
+    <br />
+    <div class="spinner-border text-danger mb-5 mt-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div>
