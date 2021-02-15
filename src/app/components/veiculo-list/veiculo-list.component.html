@@ -1,6 +1,6 @@
 <div class="content" role="main">
   <div style="display: flex;">
-    <a class="circle-link" title="Novo Veículo" href="/add" rel="noopener">
+    <a class="circle-link" title="Novo Veículo" href="/mean/add" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#76ff03" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
     </a>
     <a class="circle-link" title="Meus Veículos" href="/veiculos" rel="noopener">
@@ -9,15 +9,10 @@
     
   </div>
 <div class="list row">
-
   <div class="col-md-6">
-
     <div class="card-container">
-
       <ul class="list-group">
-
         <li
-
           class="list-group-item overflow-auto"
           *ngFor="let veiculo of veiculos; let i = index"
           [class.active]="i == currentIndex"
@@ -64,12 +59,6 @@
     <div *ngIf="!currentVeiculo">
       <h6 class="card-subtitle mb-4 mt-4 text-muted" align="center">Escolha algum veículo</h6>
     </div>
-
-
-
-    
-
-
 
 
   </div>
