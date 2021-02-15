@@ -77,10 +77,7 @@ Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do projet
 
 <br>
 
-🌐 **URL** 
-
- - Implantado com Github https://ahsouza.github.io/mean/
- - Implantado com Netlify https://602a1bd79b021b5f921e1c2f--peaceful-liskov-843212.netlify.app/
+🌐 **URL** https://mean-2021-e5552.firebaseapp.com/
 
 
 
