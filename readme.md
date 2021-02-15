@@ -18,7 +18,7 @@
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ahsouza/mean">
     </a>
   </p>
-  <div style="display: flex">
+  <div style="display: flex" align="center">
     <img src="assets/angular.png" width=40 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=40 title='bootstrap'/> <img src="assets/html.png" width=40 title='html'/> <img src="assets/css.png" width=40 title='css'/> <img src="assets/express.png" width=40 title='express'/> <img src="assets/npm.png" width=40 title='npm'/> 
   </div>
 </p>
