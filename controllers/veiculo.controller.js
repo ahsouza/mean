@@ -57,6 +57,16 @@ class VeiculoController {
       return res.status(400).json({ error: err.message });
     }
   }
+
+  async destroyAll(req, res) {
+    try {
+      await Veiculo.destroy({where: {},truncate: true})
+
+      return res.json({message: 'Todos veículos foram excluídos com sucesso'});
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  }
 }
 
 module.exports = new VeiculoController();

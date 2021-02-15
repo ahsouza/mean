@@ -29,6 +29,7 @@ app.get('/api/veiculos', VeiculoController.index);
 app.get('/api/veiculos/:id', VeiculoController.show);
 app.put('/api/veiculos/:id', VeiculoController.update);
 app.delete('/api/veiculos/:id', VeiculoController.destroy);
+app.delete('/api/veiculos', VeiculoController.destroyAll);
 
 // simple route
 app.get("/", (req, res) => {
