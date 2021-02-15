@@ -19,7 +19,7 @@
     </a>
   </p>
   <div style="display: flex" align="center">
-    <img src="assets/angular.png" width=50 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=55 title='bootstrap'/> <img src="assets/html.png" width=45 title='html'/> <img src="assets/css.png" width=50 title='css'/> <img src="assets/express.png" width=50 title='express'/> <img src="assets/npm.png" width=50 title='npm'/> 
+    <img src="assets/angular.png" width=50 height=50 title='angular'/> <img src="assets/node.png" width=50 height=50 title='node'/> <img src="assets/mysql.png" width=50 height=50 title='mysql'/> <img src="assets/bootstrap.png" width=50 height=50 title='bootstrap'/> <img src="assets/html.png" width=50 height=50 title='html'/> <img src="assets/css.png" width=50 height=50 title='css'/> <img src="assets/express.png" width=50 height=50 title='express'/> <img src="assets/npm.png" width=50 height=50 title='npm'/> 
   </div>
 </p>
 
