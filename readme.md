@@ -62,6 +62,24 @@ Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do projeto
 
 
 
+## HTTP
+
+**GET** `/api/veiculos`       -   
+**POST** `/api/veiculos`
+**GET** `/api/veiculos/:id`
+**PUT** /api/veiculos/:id
+**DELETE** /api/veiculos/:id
+/api/veiculos/add
+```
+| ENDPOINTS              | baseURL: `https://mean-ahsouza.herokuapp.com/` |
+| ------------------------ | :----------------------------------------------------------- |
+| - **GET**                | `/api/veiculos`  
+| - **POST**               | `/api/veiculos`
+| - **GET**                | `/api/veiculos/:id`                                                                      
+| - **PUT**                | `/api/veiculos/:id`
+| - **DELETE**             | `/api/veiculos/:id`                               
+
+
 <br>
 <br>
 <br>
