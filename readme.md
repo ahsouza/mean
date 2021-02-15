@@ -18,7 +18,9 @@
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ahsouza/mean">
     </a>
   </p>
-  <img src="assets/angular.png" width=40 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=40 title='bootstrap'/> <img src="assets/html.png" width=40 title='html'/> <img src="assets/css.png" width=40 title='css'/> <img src="assets/express.png" width=40 title='express'/> <img src="assets/npm.png" width=40 title='npm'/> 
+  <div style="display: flex">
+    <img src="assets/angular.png" width=40 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=40 title='bootstrap'/> <img src="assets/html.png" width=40 title='html'/> <img src="assets/css.png" width=40 title='css'/> <img src="assets/express.png" width=40 title='express'/> <img src="assets/npm.png" width=40 title='npm'/> 
+  </div>
 </p>
 
 <br>
@@ -67,6 +69,7 @@ Ramificações (branch) ```git branch -a```
 - [frontend](https://github.com/ahsouza/mean/tree/frontend)
 - [backend](https://github.com/ahsouza/mean/tree/backend)
 - [producao](https://github.com/ahsouza/mean/tree/producao)
+- [gh-pages](https://github.com/ahsouza/mean/tree/gh-pages)
 
 <br>
 <br>
@@ -85,7 +88,7 @@ Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do projet
 
 <br>
 
-🌐 **URL** https://mean.com/
+🌐 **URL** https://ahsouza.github.io/mean/
 
 <br>
 <br>
