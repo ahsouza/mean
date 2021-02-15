@@ -18,7 +18,7 @@
       <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ahsouza/mean">
     </a>
   </p>
-  <img src="assets/angular.png" width=35 title='angular'/>&nbsp;<img src="assets/node.png" width=35 title='node'/> &nbsp;<img src="assets/mysql.png" width=35 title='mysql'/> &nbsp;<img src="assets/bootstrap.png" width=35 title='bootstrap'/> &nbsp;<img src="assets/html.png" width=35 title='html'/> &nbsp;<img src="assets/css.png" width=35 title='css'/> &nbsp;<img src="assets/express.png" width=35 title='express'/> &nbsp;<img src="assets/npm.png" width=35 title='npm'/> 
+  <img src="assets/angular.png" width=40 title='angular'/> <img src="assets/node.png" width=40 title='node'/> <img src="assets/mysql.png" width=40 title='mysql'/> <img src="assets/bootstrap.png" width=40 title='bootstrap'/> <img src="assets/html.png" width=40 title='html'/> <img src="assets/css.png" width=40 title='css'/> <img src="assets/express.png" width=40 title='express'/> <img src="assets/npm.png" width=40 title='npm'/> 
 </p>
 
 <br>
@@ -45,8 +45,10 @@ branch: main
 ```
 
 <br>
+<br>
+<br>
 
-| TECNOLOGIAS              | [MEAN stack](https://pt.wikipedia.org/wiki/MEAN_(conjunto_de_software) |
+| TECNOLOGIAS              | [MEAN](https://pt.wikipedia.org/wiki/MEAN_(conjunto_de_software) |
 | ------------------------ | :----------------------------------------------------------- |
 | -                        | ✔ API com **Express.js** 
 | -                        | ✔ PWA com **Angular.js** em sua versão 11
@@ -55,6 +57,7 @@ branch: main
 | -                        | ✔ HTML/CSS + Bootstrap                               
 | -                        | ✔ Implantação com Heroku                               
 
+<br>
 <br>
 <br>
 
@@ -67,20 +70,25 @@ Ramificações (branch) ```git branch -a```
 
 <br>
 <br>
-<br>
 
 ## Frontend
 
 - Clone o repositório `https://github.com/ahsouza/mean.git` 
-- Altere a branch do projeto de `main` para `frontend` executando o comando `git checkout frontend` no terminal
+- Altere a branch do projeto de `main` para `frontend` executando o comando `git checkout frontend` 
 - Instale as dependências: `npm install` or `yarn`
 - Execute o servidor express: `npm run start` or `yarn start`
 - Acesse no browser: `http://localhost:4200`
 
 <br>
 
-Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do frontend `Angular.js 11.2.0`
+Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do projeto frontend `Angular.js 11.2.0`
 
+<br>
+
+🌐 **URL** https://mean.com/
+
+<br>
+<br>
 <br>
 <br>
 
@@ -94,7 +102,7 @@ Fazer [download](https://github.com/ahsouza/mean/archive/frontend.zip) do fronte
 
 <br>
 
-Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do backend `Express 4.17.1`
+Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do projeto backend `Express 4.17.1`
 
 <br>
 
@@ -103,12 +111,15 @@ Fazer [download](https://github.com/ahsouza/mean/archive/backend.zip) do backend
 <br>
 <br>
 <br>
+<br>
 
 ## 📋 Documentação
 
-As documentações do projeto, facilita na navegação entre as ramificações do projeto (backend)(frontend)
+As documentações do projeto, facilita na navegação entre as ramificações do projeto `(backend)(frontend)` 
 
+<br>
+<br>
 
-👉[Docs Backend Node.js](https://github.com/ahsouza/mean/tree/backend)
+👉 [Docs Backend Node.js](https://github.com/ahsouza/mean/tree/backend)
 
-👉[Docs Frontend Angular.js](https://github.com/ahsouza/mean/tree/frontend)
+👉 [Docs Frontend Angular.js](https://github.com/ahsouza/mean/tree/frontend)
