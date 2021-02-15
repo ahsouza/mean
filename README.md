@@ -28,7 +28,7 @@
 ## Estrutura de Arquivos & Pastas
 
 ```
-branch: main
+branch: frontend
 
 
 ├📂 e2e
