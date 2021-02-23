@@ -1,9 +1,8 @@
 <div>
   <div class="submit-form">
-    <div *ngIf="!submitted">
-      
+    <div *ngIf="!submitted" [hidden]="hidden">
       <div class="form-group mb-4 mt-5">
-        <label for="placa">Placa</label>
+        <label for="placa">{{inputs[0].label}}</label>
         <input
           type="text"
           class="form-control"
@@ -15,7 +14,7 @@
       </div>
 
       <div class="form-group mb-2">
-        <label for="chassi">Chassi</label>
+        <label for="chassi">{{inputs[1].label}}</label>
         <input
           type="number"
           class="form-control"
@@ -27,7 +26,7 @@
       </div>
 
       <div class="form-group mb-2">
-        <label for="renavam">Renavam</label>
+        <label for="renavam">{{inputs[2].label}}</label>
         <input
           type="number"
           class="form-control"
@@ -39,7 +38,7 @@
       </div>
 
       <div class="form-group mb-2">
-        <label for="marca">Marca</label>
+        <label for="marca">{{inputs[3].label}}</label>
         <input
           class="form-control"
           id="marca"
@@ -50,7 +49,7 @@
       </div>
       
       <div class="form-group mb-2">
-        <label for="modelo">Modelo</label>
+        <label for="modelo">{{inputs[4].label}}</label>
         <input
           class="form-control"
           id="modelo"
@@ -60,9 +59,8 @@
         />
       </div>
 
-
       <div class="form-group">
-        <label for="ano">Ano</label>
+        <label for="ano">{{inputs[5].label}}</label>
         <input
           class="form-control"
           id="ano"
@@ -72,7 +70,7 @@
         />
       </div>
 
-      <button (click)="saveVeiculo()" class="btn btn-success">salvar</button>
+      <button (click)="saveVeiculo()" [disabled]="!buttonSave" class="btn btn-success">{{buttonText}}</button>
 
     </div>
 
@@ -89,8 +87,17 @@
       </div>
 
       <div class="alert alert-success alert-dismissible mt-5 mb-5 fade show" role="alert">
-        Veículo salvo com <strong>sucesso!</strong>
+        <strong>{{messageSuccess}}</strong>
       </div>
+    </div>
+
+    <div class="content" role="main">
+
+      <mat-progress-spinner
+        [mode]="spinnerMode"
+        color="primary"
+        value="0">
+      </mat-progress-spinner>
     </div>
 
   </div>
