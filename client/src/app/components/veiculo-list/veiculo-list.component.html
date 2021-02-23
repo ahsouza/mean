@@ -6,24 +6,17 @@
     <a class="circle-link" title="Meus Veículos" href="/veiculos" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#2196f3" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"/></svg>
     </a>
-    
   </div>
 <div class="list row">
-
   <div class="col-md-6">
-
     <div class="card-container">
-
       <ul class="list-group">
-
         <li
-
           class="list-group-item overflow-auto"
           *ngFor="let veiculo of veiculos; let i = index"
           [class.active]="i == currentIndex"
           (click)="setActiveVeiculo(veiculo, i)"
         >
-
           <a class="card"  style="background-color: #2196f3; color: #c6ff00; font-weight: bold">
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#fff" width="26" height="26"><path d="M0 0h24v24H0z" fill="none"/><path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"/></svg>
 
@@ -31,48 +24,44 @@
           </a>
         </li>
       </ul>
-
     </div>    
 
   </div>
   <div class="col-md-6">
-  
     <div *ngIf="currentVeiculo">
-
       <div class="card-container" style="width: 18rem;">
         <div class="card-body">
           <h4>Veículo</h4>
           <br>
           <div class="alert alert-info" role="alert">
-            <h6 class="card-subtitle mb-2 text-muted"><b>Placa: </b> {{ currentVeiculo.placa }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted"><b>Chassi: </b> {{ currentVeiculo.chassi }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted"><b>Renavam: </b> {{ currentVeiculo.renavam }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted"><b>Modelo: </b> {{ currentVeiculo.modelo }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted"><b>Marca: </b> {{ currentVeiculo.marca }}</h6>
-            <h6 class="card-subtitle mb-2 ml-2 text-muted"><b>Ano: </b> {{ currentVeiculo.ano }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><b>{{labels[0]}}: </b> {{ currentVeiculo.placa }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><b>{{labels[1]}}: </b> {{ currentVeiculo.chassi }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><b>{{labels[2]}}: </b> {{ currentVeiculo.renavam }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><b>{{labels[3]}}: </b> {{ currentVeiculo.modelo }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><b>{{labels[4]}}: </b> {{ currentVeiculo.marca }}</h6>
+            <h6 class="card-subtitle mb-2 ml-2 text-muted"><b>{{labels[5]}}: </b> {{ currentVeiculo.ano }}</h6>
             <p class="card-text"></p>
             <br>
 
-            <a type="button" (click)="deleteVeiculo(currentVeiculo.id)" class="btn btn-outline-danger">Excluir</a>&nbsp;&nbsp;
-            <a type="button" class="btn btn-outline-primary" routerLink="/veiculos/{{ currentVeiculo.id }}">Editar</a>
+            <a type="button" (click)="deleteVeiculo(currentVeiculo.id)" class="btn btn-outline-danger">{{buttons[0]}}</a>&nbsp;&nbsp;
+            <a type="button" class="btn btn-outline-primary" routerLink="/veiculos/{{ currentVeiculo.id }}">buttons[1]</a>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div *ngIf="!currentVeiculo">
-      <h6 class="card-subtitle mb-4 mt-4 text-muted" align="center">Escolha algum veículo</h6>
+    <div *ngIf="!currentVeiculo" [hidden]="hidden">
+      <h6 class="card-subtitle mb-4 mt-4 text-muted" align="center">{{subtitle}}</h6>
     </div>
 
-
-
-    
-
-
-
-
+    <div class="content" role="main">
+      <mat-progress-spinner
+        [mode]="spinnerMode"
+        color="primary"
+        value="0">
+      </mat-progress-spinner>
+    </div>
   </div>
 
-</div>
 </div>
