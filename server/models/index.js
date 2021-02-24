@@ -20,5 +20,6 @@ db.Sequelize = Sequelize
 db.sequelize = sequelize
 
 db.veiculos = require("./veiculo.model.js")(sequelize, Sequelize)
+db.imagens = require("./image.model.js")(sequelize, Sequelize)
 
 module.exports = db;
