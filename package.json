@@ -6,11 +6,35 @@
     "type": "git",
     "url": "git+https://github.com/ahsouza/mean.git"
   },
-  "keywords": ["clean-architecture", "DDD", "node", "api-rest", "jest", "TDD", "clean-code", "design-patterns"],
+  "keywords": [
+    "clean-architecture",
+    "DDD",
+    "node",
+    "api-rest",
+    "jest",
+    "TDD",
+    "clean-code",
+    "design-patterns"
+  ],
   "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ahsouza/mean/issues"
   },
-  "homepage": "https://github.com/ahsouza/mean#readme"
+  "homepage": "https://github.com/ahsouza/mean#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "standard": "^16.0.3"
+  }
 }
