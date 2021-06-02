@@ -22,11 +22,11 @@
     "url": "https://github.com/ahsouza/mean/issues"
   },
   "homepage": "https://github.com/ahsouza/mean#readme",
-  "lint-staged": {
-    "*.js": [
-      "standard --fix",
-      "git add"
-    ]
+  "standard": {
+    "env": ["jest"]
+  },
+  "scripts": {
+    "test": "jest --colors --noStackTrace --passWithNoTests --runInBand"
   },
   "devDependencies": {
     "husky": "^6.0.0",
