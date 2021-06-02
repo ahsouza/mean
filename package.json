@@ -22,11 +22,6 @@
     "url": "https://github.com/ahsouza/mean/issues"
   },
   "homepage": "https://github.com/ahsouza/mean#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "standard --fix",
