@@ -10,7 +10,7 @@ module.exports = class LoginRouter {
       return HttpResponse.serverError()
     }
     const { email, password } = httpRequest.body
-    if (!email) { 
+    if (!email) {
       return HttpResponse.badRequest('email')
     }
     if (!password) {
@@ -20,6 +20,6 @@ module.exports = class LoginRouter {
     if (!accessToken) {
       return HttpResponse.unauthorizedError()
     }
-    return HttpResponse.success()
+    return HttpResponse.success({ accessToken })
   }
 }
