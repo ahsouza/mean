@@ -26,8 +26,8 @@
     "env": ["jest"]
   },
   "scripts": {
-    "test": "jest --colors --noStackTrace --passWithNoTests --runInBand",
-    "test:staged": "jest"
+    "test": "jest --watchAll --colors --noStackTrace --passWithNoTests --runInBand",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent"
   },
   "devDependencies": {
     "husky": "^6.0.0",
